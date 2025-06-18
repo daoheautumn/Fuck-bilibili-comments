@@ -1,0 +1,25 @@
+body.bilibili-hide-comments #comment,
+body.bilibili-hide-comments .comment-container,
+body.bilibili-hide-comments .reply-wrapper,
+body.bilibili-hide-comments #commentapp,
+body.bilibili-hide-comments [data-module="comment"],
+body.bilibili-hide-comments .video-page-comment,
+body.bilibili-hide-comments .comment-main,
+body.bilibili-hide-comments .comment-header,
+body.bilibili-hide-comments .comment-input,
+body.bilibili-hide-comments .comment-list,
+body.bilibili-hide-comments .bb-comment,
+body.bilibili-hide-comments .comment-bilibili {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    overflow: hidden !important;
+}
+
+*[class*="danmu"],
+*[class*="barrage"],
+*[class*="bullet"] {
+    display: block !important;
+    visibility: visible !important;
+    height: auto !important;
+}

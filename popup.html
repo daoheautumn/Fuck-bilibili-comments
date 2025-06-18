@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            width: 220px;
+            padding: 15px;
+            font-family: "Microsoft YaHei", sans-serif;
+            font-size: 14px;
+        }
+        
+        .title {
+            text-align: center;
+            color: #00A1D6;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        
+        .status {
+            text-align: center;
+            padding: 8px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        
+        .status.enabled {
+            background-color: #f0f9ff;
+            border: 1px solid #00A1D6;
+            color: #00A1D6;
+        }
+        
+        .status.disabled {
+            background-color: #fff2f0;
+            border: 1px solid #ff6b6b;
+            color: #ff6b6b;
+        }
+        
+        .toggle-btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 10px;
+        }
+        
+        .toggle-btn.hide {
+            background-color: #ff6b6b;
+            color: white;
+        }
+        
+        .toggle-btn.show {
+            background-color: #52c41a;
+            color: white;
+        }
+        
+        .toggle-btn:hover {
+            opacity: 0.8;
+        }
+        
+        .info {
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">隐藏/显示B站评论区</div>
+    
+    <div class="status" id="status">
+        <span id="statusText">检查状态中...</span>
+    </div>
+    
+    <button class="toggle-btn" id="toggleBtn">加载...</button>
+    
+    <div class="info">
+        点击按钮切换评论区显示状态<br>
+        在B站视频页面生效
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

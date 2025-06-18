@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "Fuck bilibili comments",
+  "version": "1.0",
+  "description": "隐藏B站评论区",
+
+  "permissions": [
+    "*://*.bilibili.com/*",
+    "storage"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.bilibili.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_start"
+    }
+  ],
+
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "隐藏B站评论区"
+  },
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "96": "icon.png"
+  }
+}
